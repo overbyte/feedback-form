@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <main class="container mx-auto p-2">
+      <form
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzO3grHPntng4zJR5m2AtlZ1-D4DxKtosfX49fIvAn7GYORfoD0GvHD8OgJZix99rf38A/exec"
+        class="flex flex-col gap-2">
+        <div class="flex justify-between items-center">
+          <label for="name" class="w-24">Name</label>
+          <input
+            class="w-full border rounded p-2"
+            type="text"
+            id="name"
+            name="Name"
+            placeholder="Name"
+            required />
+        </div>
+
+        <div class="flex justify-between items-center">
+          <label for="email" class="w-24">Email</label>
+          <input
+            class="w-full border rounded p-2"
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Email"
+            required />
+        </div>
+
+        <div class="flex justify-between items-center">
+          <label for="club" class="w-24">Club / Gym</label>
+          <input
+            class="w-full border rounded p-2"
+            type="text"
+            id="club"
+            name="Club"
+            placeholder="Club/Gym" />
+        </div>
+
+        <div class="flex justify-between items-center">
+          <label for="notes" class="w-24">notes</label>
+          <textarea
+            class="w-full border rounded p-2"
+            type="text"
+            id="notes"
+            name="Notes"
+            placeholder="Notes"></textarea>
+        </div>
+
+        <button type="submit" class="bg-cyan-900 rounded w-fit p-2 text-white">
+          Send
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
